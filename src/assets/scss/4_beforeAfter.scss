@@ -1,0 +1,63 @@
+.beforeAfter {
+}
+.beforeAfter__title {
+    background-color: $mainColor;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px;
+    width: 90%;
+    clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 0% 100%);
+}
+.beforeAfter__box {
+    padding: 50px 0;
+}
+.beforeAfter__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 100px;
+    background-color: #f7f7f7;
+    padding: 12px 12px 0;
+    margin-bottom: 50px;
+}
+.beforeAfter__inner {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.beforeAfter__name {
+    background-color: $mainColor;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+.beforeAfter__img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.beforeAfter__bottom {
+    background-color: $mainColor;
+    padding: 5px;
+    text-align: center;
+}
+.beforeAfter__message {
+    color: #fff;
+    font-weight: 700;
+    background-color: #00a79d;
+    padding: 20px 20px 20px 70px;
+    border-radius: 15px;
+    font-size: 20px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url(../img/11.png);
+        background-size: contain;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+    }
+}
