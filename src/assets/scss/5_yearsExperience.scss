@@ -1,0 +1,115 @@
+.yearsExperience {
+    padding: 0 0 50px;
+}
+.yearsExperience__title {
+    background-color: $mainColor;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px;
+    width: 90%;
+    clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 0% 100%);
+    margin-bottom: 20px;
+}
+.yearsExperience__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.yearsExperience__left {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.yearsExperience__leftLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.yearsExperience__leftLeft-imgW {
+    width: 100%;
+    height: 50%;
+}
+.yearsExperience__leftLeft-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.yearsExperience__leftRight {
+    max-width: 100%;
+    max-height: 100%;
+}
+.yearsExperience__leftRight-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.yearsExperience__right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+}
+.yearsExperience__right-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    li{
+        font-weight: 700;
+        font-size: 20px;
+        padding-left: 50px;
+        line-height: 30px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/12.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+            left: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+.yearsExperience__rightW {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+}
+.yearsExperience__right__btnW {
+}
+.yearsExperience__right__btn {
+    background-color: $mainColor;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 10px 10px 10px 40px;
+    span{
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/14.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+            left: -25px;
+        }
+    }
+    &:hover {
+        color: #fff;
+    }
+}
+.yearsExperience__rightW-imgW {
+    max-width: 100px;
+    max-height: 100%;
+}
+.yearsExperience__rightW-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
