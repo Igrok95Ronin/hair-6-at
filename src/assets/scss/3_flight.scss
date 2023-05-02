@@ -1,0 +1,33 @@
+.flight {
+    padding: 35px 0;
+}
+.flight__box {
+}
+.flight__imgW {
+}
+.flight__img {
+    width: 100%;
+    height: 100%;
+}
+.flight__titleW{
+    padding-right: 10px;
+}
+.flight__title {
+    background-color: $mainColor;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 0 50px 50px 0;
+    padding: 20px 5px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url(../img/6.png);
+        background-size: contain;
+        width: 100px;
+        height: 100px;
+        right: -5px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
