@@ -1,0 +1,57 @@
+@media(max-width: 1100px) {
+    .formsP10{
+        padding: 0 10px;
+    }
+}
+@media(max-width: 1023px) {
+    .comments__box {
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width: 767px) {
+    .mainFon__box {
+        grid-template-columns: 1fr;
+    }
+    .mainFon__img2 {
+        position: relative;
+        z-index: 10;
+        transform: translateY(-14%);
+    }
+    .header__btn {
+        z-index: 11;
+        bottom: 21%;
+    }
+    .flight__imgW {
+        padding: 0 0;
+    }
+    .flight {
+        padding: 0 0 50px;
+    }
+    .beforeAfter__wrapper {
+        gap: 50px;
+        margin-bottom: 30px;
+    }
+    .beforeAfter__box {
+        padding: 35px 0;
+    }
+    .yearsExperience__box {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .yearsExperience__right-ul {
+        padding: 0 0 0 10px;
+    }
+    .comments__wrap {
+        padding: 80px 30px 30px 30px;
+    }
+    .comments__inner {
+        padding: 80px 15px 30px 15px;
+    }
+    .hairClinic,
+    .comments {
+        padding: 0 0 40px;
+    }
+    .yearsExperience__right-ul li {
+        font-size: 19px;
+    }
+}
